@@ -1,0 +1,32 @@
+{
+    "name": "Concentrate",
+    "version": "1.0",
+    "description": "Helps you to Concentrate on Specific Task",
+    "manifest_version": 2,
+    "permissions": [
+      "tabs"
+    ],
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "images/remember-16.png",
+        "32": "images/remember-32.png",
+        "24": "images/remember-24.png",
+        "64": "images/remember-64.png"
+      }
+    },
+    "icons": {
+      "16": "images/remember-16.png",
+      "32": "images/remember-32.png",
+      "24": "images/remember-24.png",
+      "64": "images/remember-64.png"
+    }
+  }
+  
+  
