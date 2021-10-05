@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "description": "Helps you to Concentrate on Specific Tab",
   "manifest_version": 3,
-  "permissions": [
-    "tabs"
-  ],
+  "permissions": ["tabs"],
   "background": {
     "service_worker": "background.js"
   },
