@@ -1,32 +1,21 @@
 {
-    "name": "Concentrate",
-    "version": "1.0",
-    "description": "Helps you to Concentrate on Specific Task",
-    "manifest_version": 2,
-    "permissions": [
-      "tabs"
-    ],
-    "background": {
-      "scripts": [
-        "background.js"
-      ],
-      "persistent": false
-    },
-    "browser_action": {
-      "default_popup": "popup/popup.html",
-      "default_icon": {
-        "16": "images/remember-16.png",
-        "32": "images/remember-32.png",
-        "24": "images/remember-24.png",
-        "64": "images/remember-64.png"
-      }
-    },
-    "icons": {
-      "16": "images/remember-16.png",
-      "32": "images/remember-32.png",
-      "24": "images/remember-24.png",
-      "64": "images/remember-64.png"
+  "name": "Concentrate",
+  "version": "0.1.0",
+  "description": "Helps you to Concentrate on Specific Tab",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "/icons/remember-16.png",
+      "32": "/icons/remember-32.png",
+      "48": "/icons/remember-48.png",
+      "128": "/icons/remember-128.png"
     }
   }
-  
-  
+}
