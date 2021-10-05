@@ -1,15 +1,39 @@
 <html>
     <head>
+
         <meta charset="utf-8">
-        <link rel="stylesheet" href="popup.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
-        <h3 class="conhead">Concentrate</h3>
-        <h4 class="conbody">Toggle to activate concentrate mode</h4>
+        <!-- Tailwind CDN -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <!-- End Tailwind CDN -->
+
+        <!-- CSS Link  -->
+        <link rel="stylesheet" href="/popup/style.css">
+        <!-- End CSS Link  -->
+
     </head>
     <body>
-        <label class="switch">
-            <input type="checkbox">x
-            <span class="slider round" ></span>
-          </label>
+      <div class="container w-max h-70  flex flex-col bg-gradient-to-r from-green-400 to-blue-500 pr-5 pl-5">
+
+        <p class="font-sans font-semibold text-gray-50 self-center text-2xl pt-3">Concentrate</p>
+        <p class="font-mono text-gray-50 pt-3 text-lg">Toggle to activate concentrate mode</p>
+        <div class="toggle-switch self-center pb-3 pt-3">
+            <label for="toggleB" class="flex items-center cursor-pointer self-center">
+                <!-- toggle -->
+                <div class="relative">
+                  <!-- input -->
+                  <input type="checkbox" id="toggleB" class="sr-only">
+                  <!-- line -->
+                  <div class="block bg-gray-700 w-14 h-8 rounded-full"></div>
+                  <!-- dot -->
+                  <div class="dot absolute left-1 top-1 bg-green-400 w-6 h-6 rounded-full transition"></div>
+                </div>
+              </label>
+        </div>
+
+        <div class="timer">
+            <!-- Need to implement in next iteration -->
+        </div>
+
+      </div>
     </body>
 </html>
